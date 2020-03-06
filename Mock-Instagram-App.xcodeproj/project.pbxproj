@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0203FA6F2412CB4200C9A67E /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA6E2412CB4200C9A67E /* DesignableView.swift */; };
 		026E45C524129E97002ACB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45C424129E97002ACB96 /* AppDelegate.swift */; };
 		026E45C724129E97002ACB96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45C624129E97002ACB96 /* SceneDelegate.swift */; };
 		026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CD24129E9B002ACB96 /* Assets.xcassets */; };
 		026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CF24129E9B002ACB96 /* LaunchScreen.storyboard */; };
 		026E45DC24129E9B002ACB96 /* Mock_Instagram_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45DB24129E9B002ACB96 /* Mock_Instagram_AppTests.swift */; };
-		026E45ED2412BE85002ACB96 /* GoogleService-Info-Insta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 026E45EC2412BE85002ACB96 /* GoogleService-Info-Insta.plist */; };
+		026E45ED2412BE85002ACB96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 026E45EC2412BE85002ACB96 /* GoogleService-Info.plist */; };
+		026E45EF2412C139002ACB96 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026E45EE2412C139002ACB96 /* Login.storyboard */; };
+		026E45F12412C371002ACB96 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45F02412C371002ACB96 /* LoginViewController.swift */; };
+		026E45F42412C4EF002ACB96 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45F32412C4EF002ACB96 /* UIViewController+Extension.swift */; };
+		026E45F62412C8D8002ACB96 /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45F52412C8D8002ACB96 /* AuthenticationSession.swift */; };
 		89401DED40B619EC3A992C49 /* Pods_Mock_Instagram_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8048A503C39A5CA4131FC76C /* Pods_Mock_Instagram_AppTests.framework */; };
 		D1931A3E0AE5432E479EE03D /* Pods_Mock_Instagram_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F30794D3AC3B804EE8138A /* Pods_Mock_Instagram_App.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0203FA6E2412CB4200C9A67E /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		026E45C124129E97002ACB96 /* Mock-Instagram-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mock-Instagram-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026E45C424129E97002ACB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026E45C624129E97002ACB96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +43,11 @@
 		026E45D724129E9B002ACB96 /* Mock-Instagram-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mock-Instagram-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026E45DB24129E9B002ACB96 /* Mock_Instagram_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock_Instagram_AppTests.swift; sourceTree = "<group>"; };
 		026E45DD24129E9B002ACB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		026E45EC2412BE85002ACB96 /* GoogleService-Info-Insta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Insta.plist"; sourceTree = "<group>"; };
+		026E45EC2412BE85002ACB96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		026E45EE2412C139002ACB96 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		026E45F02412C371002ACB96 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		026E45F32412C4EF002ACB96 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		026E45F52412C8D8002ACB96 /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
 		4E9858196E394E9F0756C8EF /* Pods-Mock-Instagram-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock-Instagram-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Mock-Instagram-AppTests/Pods-Mock-Instagram-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5472BE41F2F8EE57599D4361 /* Pods-Mock-Instagram-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock-Instagram-App.debug.xcconfig"; path = "Target Support Files/Pods-Mock-Instagram-App/Pods-Mock-Instagram-App.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE2C8E5DA0AA0DC832E6C41 /* Pods-Mock-Instagram-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock-Instagram-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Mock-Instagram-AppTests/Pods-Mock-Instagram-AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,14 +99,15 @@
 		026E45C324129E97002ACB96 /* Mock-Instagram-App */ = {
 			isa = PBXGroup;
 			children = (
-				026E45EB2412B84D002ACB96 /* Storyboards */,
-				026E45EA2412B840002ACB96 /* Models */,
-				026E45E92412B82D002ACB96 /* Firebase Services */,
 				026E45E82412B7FC002ACB96 /* Controllers */,
+				026E45E92412B82D002ACB96 /* Firebase Services */,
+				026E45EB2412B84D002ACB96 /* Storyboards */,
+				026E45F22412C3DE002ACB96 /* Extensions */,
+				026E45EA2412B840002ACB96 /* Models */,
 				026E45E72412B7EE002ACB96 /* Views */,
 				026E45E62412A2B5002ACB96 /* Supporting Files */,
 				026E45D224129E9B002ACB96 /* Info.plist */,
-				026E45EC2412BE85002ACB96 /* GoogleService-Info-Insta.plist */,
+				026E45EC2412BE85002ACB96 /* GoogleService-Info.plist */,
 			);
 			path = "Mock-Instagram-App";
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 		026E45E82412B7FC002ACB96 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				026E45F02412C371002ACB96 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -138,6 +150,7 @@
 		026E45E92412B82D002ACB96 /* Firebase Services */ = {
 			isa = PBXGroup;
 			children = (
+				026E45F52412C8D8002ACB96 /* AuthenticationSession.swift */,
 			);
 			path = "Firebase Services";
 			sourceTree = "<group>";
@@ -152,8 +165,18 @@
 		026E45EB2412B84D002ACB96 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				026E45EE2412C139002ACB96 /* Login.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		026E45F22412C3DE002ACB96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				026E45F32412C4EF002ACB96 /* UIViewController+Extension.swift */,
+				0203FA6E2412CB4200C9A67E /* DesignableView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		17C816F353C72723E3838B4A /* Pods */ = {
@@ -260,8 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026E45EF2412C139002ACB96 /* Login.storyboard in Resources */,
 				026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */,
-				026E45ED2412BE85002ACB96 /* GoogleService-Info-Insta.plist in Resources */,
+				026E45ED2412BE85002ACB96 /* GoogleService-Info.plist in Resources */,
 				026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026E45F42412C4EF002ACB96 /* UIViewController+Extension.swift in Sources */,
+				026E45F12412C371002ACB96 /* LoginViewController.swift in Sources */,
+				0203FA6F2412CB4200C9A67E /* DesignableView.swift in Sources */,
 				026E45C524129E97002ACB96 /* AppDelegate.swift in Sources */,
+				026E45F62412C8D8002ACB96 /* AuthenticationSession.swift in Sources */,
 				026E45C724129E97002ACB96 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
