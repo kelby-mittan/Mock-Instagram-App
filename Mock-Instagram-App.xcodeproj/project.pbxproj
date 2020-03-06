@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0203FA6F2412CB4200C9A67E /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA6E2412CB4200C9A67E /* DesignableView.swift */; };
+		0203FA712412D10C00C9A67E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0203FA702412D10C00C9A67E /* GoogleService-Info.plist */; };
 		026E45C524129E97002ACB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45C424129E97002ACB96 /* AppDelegate.swift */; };
 		026E45C724129E97002ACB96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45C624129E97002ACB96 /* SceneDelegate.swift */; };
 		026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CD24129E9B002ACB96 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		0203FA6E2412CB4200C9A67E /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		0203FA702412D10C00C9A67E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		026E45C124129E97002ACB96 /* Mock-Instagram-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mock-Instagram-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026E45C424129E97002ACB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026E45C624129E97002ACB96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				026E45E72412B7EE002ACB96 /* Views */,
 				026E45E62412A2B5002ACB96 /* Supporting Files */,
 				026E45D224129E9B002ACB96 /* Info.plist */,
+				0203FA702412D10C00C9A67E /* GoogleService-Info.plist */,
 			);
 			path = "Mock-Instagram-App";
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				026E45EF2412C139002ACB96 /* Login.storyboard in Resources */,
+				0203FA712412D10C00C9A67E /* GoogleService-Info.plist in Resources */,
 				026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */,
 				026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */,
 			);
