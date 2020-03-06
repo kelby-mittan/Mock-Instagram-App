@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0203FA6F2412CB4200C9A67E /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA6E2412CB4200C9A67E /* DesignableView.swift */; };
 		0203FA712412D10C00C9A67E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0203FA702412D10C00C9A67E /* GoogleService-Info.plist */; };
+		0203FA732412D2A900C9A67E /* InstaMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0203FA722412D2A900C9A67E /* InstaMain.storyboard */; };
+		0203FA752412D9F700C9A67E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA742412D9F700C9A67E /* TabBarController.swift */; };
+		0203FA772412DA2900C9A67E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA762412DA2900C9A67E /* FeedViewController.swift */; };
+		0203FA792412DA5300C9A67E /* PostDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA782412DA5300C9A67E /* PostDetailController.swift */; };
+		0203FA7B2412DA7B00C9A67E /* CreatePostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA7A2412DA7B00C9A67E /* CreatePostController.swift */; };
+		0203FA7D2412DAF100C9A67E /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0203FA7C2412DAF100C9A67E /* FeedCell.swift */; };
 		026E45C524129E97002ACB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45C424129E97002ACB96 /* AppDelegate.swift */; };
 		026E45C724129E97002ACB96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45C624129E97002ACB96 /* SceneDelegate.swift */; };
 		026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CD24129E9B002ACB96 /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 /* Begin PBXFileReference section */
 		0203FA6E2412CB4200C9A67E /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		0203FA702412D10C00C9A67E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0203FA722412D2A900C9A67E /* InstaMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InstaMain.storyboard; sourceTree = "<group>"; };
+		0203FA742412D9F700C9A67E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0203FA762412DA2900C9A67E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0203FA782412DA5300C9A67E /* PostDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailController.swift; sourceTree = "<group>"; };
+		0203FA7A2412DA7B00C9A67E /* CreatePostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostController.swift; sourceTree = "<group>"; };
+		0203FA7C2412DAF100C9A67E /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		026E45C124129E97002ACB96 /* Mock-Instagram-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mock-Instagram-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026E45C424129E97002ACB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026E45C624129E97002ACB96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +147,7 @@
 		026E45E72412B7EE002ACB96 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0203FA7C2412DAF100C9A67E /* FeedCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,7 +155,11 @@
 		026E45E82412B7FC002ACB96 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0203FA742412D9F700C9A67E /* TabBarController.swift */,
 				026E45F02412C371002ACB96 /* LoginViewController.swift */,
+				0203FA762412DA2900C9A67E /* FeedViewController.swift */,
+				0203FA782412DA5300C9A67E /* PostDetailController.swift */,
+				0203FA7A2412DA7B00C9A67E /* CreatePostController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				026E45EE2412C139002ACB96 /* Login.storyboard */,
+				0203FA722412D2A900C9A67E /* InstaMain.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -283,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0203FA732412D2A900C9A67E /* InstaMain.storyboard in Resources */,
 				026E45EF2412C139002ACB96 /* Login.storyboard in Resources */,
 				0203FA712412D10C00C9A67E /* GoogleService-Info.plist in Resources */,
 				026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */,
@@ -369,10 +388,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				026E45F42412C4EF002ACB96 /* UIViewController+Extension.swift in Sources */,
+				0203FA7B2412DA7B00C9A67E /* CreatePostController.swift in Sources */,
 				026E45F12412C371002ACB96 /* LoginViewController.swift in Sources */,
 				0203FA6F2412CB4200C9A67E /* DesignableView.swift in Sources */,
+				0203FA7D2412DAF100C9A67E /* FeedCell.swift in Sources */,
 				026E45C524129E97002ACB96 /* AppDelegate.swift in Sources */,
+				0203FA752412D9F700C9A67E /* TabBarController.swift in Sources */,
+				0203FA792412DA5300C9A67E /* PostDetailController.swift in Sources */,
 				026E45F62412C8D8002ACB96 /* AuthenticationSession.swift in Sources */,
+				0203FA772412DA2900C9A67E /* FeedViewController.swift in Sources */,
 				026E45C724129E97002ACB96 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

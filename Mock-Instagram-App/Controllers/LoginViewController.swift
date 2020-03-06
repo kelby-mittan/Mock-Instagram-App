@@ -52,7 +52,6 @@ class LoginViewController: UIViewController {
                 case .success:
                     DispatchQueue.main.async {
                         self?.navigateToMainView()
-                        
                     }
                 }
             }
