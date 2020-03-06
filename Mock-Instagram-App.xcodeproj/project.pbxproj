@@ -12,6 +12,7 @@
 		026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CD24129E9B002ACB96 /* Assets.xcassets */; };
 		026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CF24129E9B002ACB96 /* LaunchScreen.storyboard */; };
 		026E45DC24129E9B002ACB96 /* Mock_Instagram_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45DB24129E9B002ACB96 /* Mock_Instagram_AppTests.swift */; };
+		026E45ED2412BE85002ACB96 /* GoogleService-Info-Insta.plist in Resources */ = {isa = PBXBuildFile; fileRef = 026E45EC2412BE85002ACB96 /* GoogleService-Info-Insta.plist */; };
 		89401DED40B619EC3A992C49 /* Pods_Mock_Instagram_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8048A503C39A5CA4131FC76C /* Pods_Mock_Instagram_AppTests.framework */; };
 		D1931A3E0AE5432E479EE03D /* Pods_Mock_Instagram_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0F30794D3AC3B804EE8138A /* Pods_Mock_Instagram_App.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		026E45D724129E9B002ACB96 /* Mock-Instagram-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mock-Instagram-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026E45DB24129E9B002ACB96 /* Mock_Instagram_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock_Instagram_AppTests.swift; sourceTree = "<group>"; };
 		026E45DD24129E9B002ACB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026E45EC2412BE85002ACB96 /* GoogleService-Info-Insta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Insta.plist"; sourceTree = "<group>"; };
 		4E9858196E394E9F0756C8EF /* Pods-Mock-Instagram-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock-Instagram-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Mock-Instagram-AppTests/Pods-Mock-Instagram-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5472BE41F2F8EE57599D4361 /* Pods-Mock-Instagram-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock-Instagram-App.debug.xcconfig"; path = "Target Support Files/Pods-Mock-Instagram-App/Pods-Mock-Instagram-App.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE2C8E5DA0AA0DC832E6C41 /* Pods-Mock-Instagram-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mock-Instagram-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Mock-Instagram-AppTests/Pods-Mock-Instagram-AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				026E45E72412B7EE002ACB96 /* Views */,
 				026E45E62412A2B5002ACB96 /* Supporting Files */,
 				026E45D224129E9B002ACB96 /* Info.plist */,
+				026E45EC2412BE85002ACB96 /* GoogleService-Info-Insta.plist */,
 			);
 			path = "Mock-Instagram-App";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */,
+				026E45ED2412BE85002ACB96 /* GoogleService-Info-Insta.plist in Resources */,
 				026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kelbymittan.Mock-Instagram-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kelbymittan.mock-instagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,7 +524,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kelbymittan.Mock-Instagram-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kelbymittan.mock-instagram";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
