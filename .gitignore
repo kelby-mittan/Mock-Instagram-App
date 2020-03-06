@@ -89,5 +89,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-GoogleService-Info.plist
+GoogleService-Info-Insta.plist
 .DS_Store
