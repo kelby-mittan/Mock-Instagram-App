@@ -80,7 +80,6 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func toggleAccountState(_ sender: UIButton) {
-        // change the account login state
         accountState = accountState == .existingUser ? .newUser : .existingUser
         
         // animation duration

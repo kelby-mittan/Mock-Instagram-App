@@ -13,7 +13,6 @@
 		026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CD24129E9B002ACB96 /* Assets.xcassets */; };
 		026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026E45CF24129E9B002ACB96 /* LaunchScreen.storyboard */; };
 		026E45DC24129E9B002ACB96 /* Mock_Instagram_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45DB24129E9B002ACB96 /* Mock_Instagram_AppTests.swift */; };
-		026E45ED2412BE85002ACB96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 026E45EC2412BE85002ACB96 /* GoogleService-Info.plist */; };
 		026E45EF2412C139002ACB96 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026E45EE2412C139002ACB96 /* Login.storyboard */; };
 		026E45F12412C371002ACB96 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45F02412C371002ACB96 /* LoginViewController.swift */; };
 		026E45F42412C4EF002ACB96 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E45F32412C4EF002ACB96 /* UIViewController+Extension.swift */; };
@@ -43,7 +42,6 @@
 		026E45D724129E9B002ACB96 /* Mock-Instagram-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mock-Instagram-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		026E45DB24129E9B002ACB96 /* Mock_Instagram_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock_Instagram_AppTests.swift; sourceTree = "<group>"; };
 		026E45DD24129E9B002ACB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		026E45EC2412BE85002ACB96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		026E45EE2412C139002ACB96 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		026E45F02412C371002ACB96 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		026E45F32412C4EF002ACB96 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				026E45E72412B7EE002ACB96 /* Views */,
 				026E45E62412A2B5002ACB96 /* Supporting Files */,
 				026E45D224129E9B002ACB96 /* Info.plist */,
-				026E45EC2412BE85002ACB96 /* GoogleService-Info.plist */,
 			);
 			path = "Mock-Instagram-App";
 			sourceTree = "<group>";
@@ -285,7 +282,6 @@
 			files = (
 				026E45EF2412C139002ACB96 /* Login.storyboard in Resources */,
 				026E45D124129E9B002ACB96 /* LaunchScreen.storyboard in Resources */,
-				026E45ED2412BE85002ACB96 /* GoogleService-Info.plist in Resources */,
 				026E45CE24129E9B002ACB96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
