@@ -17,6 +17,17 @@ class FeedCell: UICollectionViewCell {
         return iv
     }()
     
+    public lazy var displayNameLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.backgroundColor = .white
+        label.clipsToBounds = true
+        label.layer.cornerRadius = 10
+        label.textAlignment = .center
+        label.text = "@displayname"
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)
         commonInit()
@@ -29,12 +40,21 @@ class FeedCell: UICollectionViewCell {
     
     private func commonInit() {
         setupFeedImageConstraints()
+        setupDisplayNameLabelConstraints()
     }
     
     private func setupFeedImageConstraints() {
         addSubview(feedImage)
         feedImage.snp.makeConstraints { (feedImage) in
             feedImage.top.leading.trailing.bottom.equalTo(self)
+        }
+    }
+    
+    private func setupDisplayNameLabelConstraints() {
+        addSubview(displayNameLabel)
+        displayNameLabel.snp.makeConstraints { (displayName) in
+            displayName.leading.trailing.equalTo(self).inset(10)
+            displayName.bottom.equalTo(self.snp.bottom).inset(10)
         }
     }
 }
