@@ -11,7 +11,7 @@
         <!--Profile-->
         <scene sceneID="Euc-6L-kaY">
             <objects>
-                <viewController id="gZd-Yn-IuY" sceneMemberID="viewController">
+                <viewController id="gZd-Yn-IuY" customClass="ProfileController" customModule="Mock_Instagram_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aIk-IV-gwb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,14 +34,17 @@
                                     <constraint firstAttribute="height" constant="44" id="ycg-Nb-ipj"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="ellipsis.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="editProfileButtonPressed:" destination="gZd-Yn-IuY" eventType="touchUpInside" id="AmE-xw-EWQ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drd-ih-Dv9">
                                 <rect key="frame" x="114" y="320.5" width="186" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-gs-aUE">
-                                <rect key="frame" x="154.5" y="75" width="105" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNg-gs-aUE">
+                                <rect key="frame" x="114" y="75" width="186" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,10 +52,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-iB-43O">
                                 <rect key="frame" x="158" y="374.5" width="98" height="30"/>
                                 <state key="normal" title="Update Profile"/>
+                                <connections>
+                                    <action selector="updateProfileButtonPressed:" destination="gZd-Yn-IuY" eventType="touchUpInside" id="Mx8-e2-gQX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJL-k9-Wej">
                                 <rect key="frame" x="177" y="424.5" width="60" height="30"/>
                                 <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutButtonPressed:" destination="gZd-Yn-IuY" eventType="touchUpInside" id="owa-zO-zht"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -68,7 +77,7 @@
                             <constraint firstItem="Drd-ih-Dv9" firstAttribute="width" secondItem="d5e-pC-zc3" secondAttribute="width" id="gVW-wd-jc7"/>
                             <constraint firstItem="Drd-ih-Dv9" firstAttribute="centerX" secondItem="d5e-pC-zc3" secondAttribute="centerX" id="hVj-Q8-xbl"/>
                             <constraint firstItem="Drd-ih-Dv9" firstAttribute="top" secondItem="d5e-pC-zc3" secondAttribute="bottom" constant="30" id="hmn-69-h0f"/>
-                            <constraint firstItem="uNg-gs-aUE" firstAttribute="width" secondItem="d5e-pC-zc3" secondAttribute="width" multiplier="0.564516" id="iBm-hG-jvY"/>
+                            <constraint firstItem="uNg-gs-aUE" firstAttribute="width" secondItem="d5e-pC-zc3" secondAttribute="width" id="iBm-hG-jvY"/>
                             <constraint firstItem="UF6-iB-43O" firstAttribute="top" secondItem="Drd-ih-Dv9" secondAttribute="bottom" constant="20" id="l2e-ZS-t9r"/>
                             <constraint firstItem="AJL-k9-Wej" firstAttribute="top" secondItem="UF6-iB-43O" secondAttribute="bottom" constant="20" id="lpx-ho-b7p"/>
                             <constraint firstItem="w5I-F3-On5" firstAttribute="leading" secondItem="d5e-pC-zc3" secondAttribute="trailing" constant="20" id="wwD-pw-nP1"/>
@@ -76,6 +85,11 @@
                         <viewLayoutGuide key="safeArea" id="urP-2i-R8Z"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="person.fill" catalog="system" id="jOL-Nx-k8W"/>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="Drd-ih-Dv9" id="yoR-PT-weu"/>
+                        <outlet property="emailLabel" destination="uNg-gs-aUE" id="37l-n3-oaz"/>
+                        <outlet property="profileImage" destination="d5e-pC-zc3" id="nPc-Vk-Q22"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhX-ka-W1I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

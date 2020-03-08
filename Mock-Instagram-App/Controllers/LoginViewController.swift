@@ -74,7 +74,7 @@ class LoginViewController: UIViewController {
     }
     
     private func navigateToMainView() {
-        UIViewController.showViewController(storyboardName: "MainView", viewControllerId: "MainTabBarController")
+        UIViewController.showViewController(storyboardName: "InstaMain", viewControllerId: "TabBarController")
     }
     
     
