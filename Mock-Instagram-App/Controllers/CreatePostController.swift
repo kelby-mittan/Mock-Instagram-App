@@ -47,6 +47,10 @@ class CreatePostController: UIViewController {
         
         photoImageView.isUserInteractionEnabled = true
         photoImageView.addGestureRecognizer(longPressGesture)
+        setupTextViewUI()
+    }
+    
+    private func setupTextViewUI() {
         photoDescriptionTextView.delegate = self
         photoDescriptionTextView.layer.borderWidth = 1
         photoDescriptionTextView.layer.borderColor = UIColor.placeholderText.cgColor
@@ -155,11 +159,16 @@ extension CreatePostController: UIImagePickerControllerDelegate, UINavigationCon
 
 extension CreatePostController: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
-        textView.text = ""
+        
+        if textView.text == "enter a description for your post" {
+            textView.text = ""
+        }
+        
         photoDescriptionTextView.textColor = .black
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
         photoDescriptionTextView.text = textView.text
     }
+    
 }
