@@ -29,11 +29,14 @@ class FeedViewController: UIViewController {
         collectionView.register(FeedCell.self, forCellWithReuseIdentifier: "feedCell")
         collectionView.dataSource = self
         collectionView.delegate = self
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        loadListener()
+    }
+    
+    private func loadListener() {
         listener = Firestore.firestore().collection(DatabaseService.postFeedCollection).addSnapshotListener({ [weak self] (snapshot, error) in
             if let error = error {
                 DispatchQueue.main.async {
@@ -91,6 +94,8 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let post = posts[indexPath.row]
+        let detailVC = PostDetailController(post)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }

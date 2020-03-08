@@ -18,6 +18,8 @@ class CreatePostController: UIViewController {
     
     @IBOutlet var photoImageView: UIImageView!
         
+    @IBOutlet var postButton: UIBarButtonItem!
+    
     private let dbService = DatabaseService()
     
     private let storageService = StorageService()
@@ -94,6 +96,15 @@ class CreatePostController: UIViewController {
                 }
             case .success(let documentId):
                 self?.uploadPhoto(photo: resizedImage, documentId: documentId)
+                self?.showAlert(title: "Cool", message: "Your feed's been updated")
+                self?.postButton.isEnabled = false
+                
+//                self?.showAlert(title: "Cool", message: "Your feed's been updated", completion: { (done) in
+//                    let feedVC = FeedViewController()
+//                    self?.navigationController?.pushViewController(feedVC, animated: true)
+//                })
+//
+//                self?.navigationController?.dismiss(animated: true)
 //                self?.dismiss(animated: true)
 //                let feedVC = FeedViewController()
 //                self?.navigationController?.pushViewController(feedVC, animated: true)

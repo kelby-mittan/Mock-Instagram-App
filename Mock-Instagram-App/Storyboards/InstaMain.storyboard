@@ -212,6 +212,7 @@
                         <outlet property="photoDescriptionTextView" destination="NuF-yy-qi9" id="vxg-a9-q7z"/>
                         <outlet property="photoImageView" destination="Kjb-qO-xpt" id="5cP-Cw-f4w"/>
                         <outlet property="photoNameTextField" destination="70G-fw-v1X" id="23l-l7-eme"/>
+                        <outlet property="postButton" destination="q0d-Zz-P0S" id="qTb-cN-eHW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qE9-bg-me2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -67,14 +67,14 @@ class PostDetailView: UIView {
     private func setupNameLabel() {
         addSubview(nameLabel)
         nameLabel.snp.makeConstraints { (name) in
-            name.top.leading.trailing.equalTo(self).inset(20)
+            name.top.leading.trailing.equalTo(safeAreaLayoutGuide).inset(20)
         }
     }
     
     private func setupPostImageViewConstraints() {
         addSubview(postImageView)
         postImageView.snp.makeConstraints { (image) in
-            image.top.equalTo(nameLabel).inset(60)
+            image.top.equalTo(nameLabel).offset(50)
             image.centerX.equalTo(self.center)
             image.width.equalTo(self).multipliedBy(0.75)
             image.height.equalTo(self).multipliedBy(0.25)
