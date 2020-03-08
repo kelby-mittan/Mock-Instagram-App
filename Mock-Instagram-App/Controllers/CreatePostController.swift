@@ -45,7 +45,10 @@ class CreatePostController: UIViewController {
         
         photoImageView.isUserInteractionEnabled = true
         photoImageView.addGestureRecognizer(longPressGesture)
-        
+        photoDescriptionTextView.delegate = self
+        photoDescriptionTextView.layer.borderWidth = 1
+        photoDescriptionTextView.layer.borderColor = UIColor.placeholderText.cgColor
+        photoDescriptionTextView.layer.cornerRadius = 5
     }
     
     @objc private func showPhotoOptions() {
@@ -91,8 +94,12 @@ class CreatePostController: UIViewController {
                 }
             case .success(let documentId):
                 self?.uploadPhoto(photo: resizedImage, documentId: documentId)
+//                self?.dismiss(animated: true)
+//                let feedVC = FeedViewController()
+//                self?.navigationController?.pushViewController(feedVC, animated: true)
             }
         }
+
     }
     
     private func uploadPhoto(photo: UIImage, documentId: String) {
@@ -109,7 +116,7 @@ class CreatePostController: UIViewController {
     }
     
     private func updateItemImageURL(_ url: URL, documentId: String) {
-        Firestore.firestore().collection(DatabaseService.postFeedCollection).document(documentId).updateData(["imageURL":url.absoluteString]) { [weak self] (error) in
+        Firestore.firestore().collection(DatabaseService.postFeedCollection).document(documentId).updateData(["photoURL":url.absoluteString]) { [weak self] (error) in
             if let error = error {
                 DispatchQueue.main.async {
                     self?.showAlert(title: "Fail to update item", message: "\(error.localizedDescription)")
@@ -132,5 +139,16 @@ extension CreatePostController: UIImagePickerControllerDelegate, UINavigationCon
         
         selectedImage = image
         dismiss(animated: true)
+    }
+}
+
+extension CreatePostController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.text = ""
+        photoDescriptionTextView.textColor = .black
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        photoDescriptionTextView.text = textView.text
     }
 }

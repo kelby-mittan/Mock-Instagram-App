@@ -57,4 +57,9 @@ class FeedCell: UICollectionViewCell {
             displayName.bottom.equalTo(self.snp.bottom).inset(10)
         }
     }
+    
+    public func configureCell(for post: PhotoPost) {
+        feedImage.kf.setImage(with: URL(string: post.photoURL))
+        displayNameLabel.text = "\(post.postersName)"
+    }
 }

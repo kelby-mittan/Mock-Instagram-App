@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class FeedViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
+    
+    private var listener: ListenerRegistration?
+    
+    private var posts = [PhotoPost]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +30,20 @@ class FeedViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        listener = Firestore.firestore().collection(DatabaseService.postFeedCollection).addSnapshotListener({ [weak self] (snapshot, error) in
+            if let error = error {
+                DispatchQueue.main.async {
+                    self?.showAlert(title: "Error", message: "\(error.localizedDescription)")
+                }
+            } else if let snapshot = snapshot {
+                let posts = snapshot.documents.map { PhotoPost($0.data()) }
+                self?.posts = posts
+            }
+        })
     }
     
     @IBAction func addPostButtonPressed(_ sender: UIBarButtonItem) {
@@ -30,16 +55,18 @@ class FeedViewController: UIViewController {
 
 extension FeedViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return posts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "feedCell", for: indexPath) as? FeedCell else {
             fatalError("could not deque cell")
         }
+        let post = posts[indexPath.row]
         cell.clipsToBounds = true
         cell.layer.cornerRadius = 20
         cell.backgroundColor = .orange
+        cell.configureCell(for: post)
         return cell
     }
     
