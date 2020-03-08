@@ -13,9 +13,7 @@ import Kingfisher
 class ProfileController: UIViewController {
     
     @IBOutlet var profileImage: UIImageView!
-    
     @IBOutlet var displayNameTextField: UITextField!
-    
     @IBOutlet var emailLabel: UILabel!
     
     private lazy var imagePickerController: UIImagePickerController = {

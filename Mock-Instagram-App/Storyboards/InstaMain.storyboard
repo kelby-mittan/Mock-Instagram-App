@@ -202,8 +202,17 @@
                         <viewLayoutGuide key="safeArea" id="iZl-hT-NgR"/>
                     </view>
                     <navigationItem key="navigationItem" id="gug-Y5-qoN">
-                        <barButtonItem key="rightBarButtonItem" title="Post" id="q0d-Zz-P0S"/>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="q0d-Zz-P0S">
+                            <connections>
+                                <action selector="postButtonPressed:" destination="cYf-pu-4po" id="aa7-zm-x21"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="photoDescriptionTextView" destination="NuF-yy-qi9" id="vxg-a9-q7z"/>
+                        <outlet property="photoImageView" destination="Kjb-qO-xpt" id="5cP-Cw-f4w"/>
+                        <outlet property="photoNameTextField" destination="70G-fw-v1X" id="23l-l7-eme"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qE9-bg-me2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
